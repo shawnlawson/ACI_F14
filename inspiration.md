@@ -27,6 +27,8 @@ add, add, & add!
 
 [Aaron Koblin](http://www.aaronkoblin.com/)
 
+[Raven Kwok](http://ravenkwok.com)
+
 [Golan Levin](http://www.flong.com/)
 
 [Seb Lee-Delisle](http://seb.ly)
