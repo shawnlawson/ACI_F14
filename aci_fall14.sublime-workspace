@@ -1,0 +1,880 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mat",
+				"material"
+			],
+			[
+				"sc",
+				"scene"
+			],
+			[
+				"valu",
+				"values"
+			],
+			[
+				"look",
+				"LookAt"
+			],
+			[
+				"Mat",
+				"Material"
+			],
+			[
+				"vec",
+				"vector	std::vector"
+			],
+			[
+				"max",
+				"maxNorms"
+			],
+			[
+				"va",
+				"values"
+			],
+			[
+				"Ext",
+				"EXTERN"
+			],
+			[
+				"tra",
+				"transfstack"
+			],
+			[
+				"read",
+				"readvals"
+			],
+			[
+				"right",
+				"rightmultiply"
+			],
+			[
+				"I",
+				"Idiff"
+			],
+			[
+				"my",
+				"mynormal"
+			],
+			[
+				"f",
+				"f"
+			],
+			[
+				"up",
+				"upvector"
+			],
+			[
+				"fov",
+				"fovy"
+			],
+			[
+				"cen",
+				"center"
+			],
+			[
+				"glUn",
+				"glUniform1i"
+			],
+			[
+				"glUniform",
+				"glUniform4fv"
+			],
+			[
+				"glUni",
+				"glUniform4fv"
+			],
+			[
+				"num",
+				"numLights"
+			],
+			[
+				"z",
+				"zNear"
+			],
+			[
+				"in",
+				"insertedId  (variable)"
+			],
+			[
+				"insert",
+				"insertedId"
+			],
+			[
+				"mysql_r",
+				"mysql_real_escape_string"
+			],
+			[
+				"th",
+				"thumbs_dir  (variable)"
+			],
+			[
+				"clien",
+				"client_id"
+			],
+			[
+				"token",
+				"tokenAudience  (variable)"
+			],
+			[
+				"google",
+				"google-api-php-client"
+			],
+			[
+				"lon",
+				"longitude  (variable)"
+			],
+			[
+				"long",
+				"long_ref  (variable)"
+			],
+			[
+				"la",
+				"latitude  (variable)"
+			],
+			[
+				"app",
+				"applicationContext"
+			],
+			[
+				"Ex",
+				"ExifInterface"
+			],
+			[
+				"String",
+				"StringBody"
+			],
+			[
+				"lig",
+				"lightPosition"
+			],
+			[
+				"norm",
+				"normalize"
+			],
+			[
+				"ligh",
+				"lightDir"
+			],
+			[
+				"mCo",
+				"mCodeEditor"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"s",
+				"select"
+			],
+			[
+				"r",
+				"rgba()"
+			],
+			[
+				"opacity",
+				"opacity:   (property)"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"editor",
+				"mCodeEditor"
+			],
+			[
+				"left",
+				"leftColumn"
+			],
+			[
+				"Create",
+				"CreateRenderTargets"
+			],
+			[
+				"g",
+				"gl"
+			],
+			[
+				"back",
+				"backbuffer"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"shader",
+				"shaderData"
+			],
+			[
+				"TEXTURE",
+				"TEXTURE_2D"
+			],
+			[
+				"break",
+				"breakpoints"
+			],
+			[
+				"action",
+				"action_bar"
+			],
+			[
+				"xml",
+				"xml_container"
+			],
+			[
+				"h",
+				"haml"
+			],
+			[
+				"haml",
+				"haml_proc"
+			],
+			[
+				"text",
+				"text-align"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "readme.md",
+			"settings":
+			{
+				"buffer_size": 2270,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Makefile/Make.sublime-build",
+	"command_palette":
+	{
+		"height": 107.0,
+		"selected_items":
+		[
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"wra",
+				"Word Wrap: Toggle"
+			],
+			[
+				"wr",
+				"Word Wrap: Toggle"
+			],
+			[
+				"word",
+				"Word Wrap: Toggle"
+			],
+			[
+				"make",
+				"Set Syntax: Makefile"
+			],
+			[
+				"world",
+				"Word Wrap: Toggle"
+			],
+			[
+				"warp",
+				"Word Wrap: Toggle"
+			],
+			[
+				"wor",
+				"Word Wrap: Toggle"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"wo",
+				"Word Wrap: Toggle"
+			],
+			[
+				"ack",
+				"Package Control: Disable Package"
+			],
+			[
+				"packages",
+				"Package Control: List Packages"
+			],
+			[
+				"pak",
+				"Package Control: Install Package"
+			],
+			[
+				"packin",
+				"Package Control: Install Package"
+			],
+			[
+				"pakin",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"make clean",
+			"make",
+			"print (sys.version)",
+			"import sys",
+			"print (sys.version)",
+			"import sys",
+			"print (sys.version)",
+			"version",
+			"--version",
+			"--versoin",
+			"npm install -g csslint",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/lawsos2/Desktop/untitled",
+		"/Users/lawsos2/Downloads/6bccbe22b5be/6bccbe22b5be.crt",
+		"/Users/lawsos2/Downloads/6bccbe22b5be/gd_bundle-g2-g1.crt",
+		"/Users/lawsos2/New Unity Project/Assets/NewBehaviourScript.js",
+		"/Users/lawsos2/Desktop/tracer/scene.xml",
+		"/Users/lawsos2/Downloads/tinyxml2-master/readme.md",
+		"/Library/WebServer/Documents/_Obi-Wan_Codenobi_/js/shadertoy.js",
+		"/Library/WebServer/Documents/_Obi-Wan_Codenobi_/js/pgWatch.js",
+		"/Library/WebServer/Documents/_Obi-Wan_Codenobi_/js/cmGeneral.js",
+		"/Library/WebServer/Documents/_Obi-Wan_Codenobi_/js/cmPreview.js",
+		"/Library/WebServer/Documents/_Obi-Wan_Codenobi_/js/effect.js",
+		"/Users/lawsos2/Desktop/uploader2.php",
+		"/Users/lawsos2/Desktop/sphoto.sql",
+		"/Users/lawsos2/Sites/phpmyadmin/config.inc.php",
+		"/Users/lawsos2/Documents/andWorkspace/php/uploader2.php",
+		"/Users/lawsos2/Documents/andWorkspace/uploader2.php",
+		"/Users/lawsos2/Downloads/hw3-linuxosx/scene4-diffuse.test",
+		"/Users/lawsos2/Downloads/hw3-linuxosx/Scene.h",
+		"/Users/lawsos2/Downloads/hw3-linuxosx/Readfile.h",
+		"/Users/lawsos2/Downloads/hw3-linuxosx/Makefile",
+		"/Users/lawsos2/Downloads/hw3-linuxosx/main.cpp",
+		"/Users/lawsos2/Downloads/twilio-python-master/setup.py",
+		"/Users/lawsos2/Downloads/hw3-linuxosx/Readfile.cpp",
+		"/Users/lawsos2/Documents/Code/pbrt-v2/scenes/killeroo-simple.pbrt",
+		"/Users/lawsos2/Documents/Code/pbrt-v2/scenes/prt-teapot.pbrt",
+		"/Users/lawsos2/Documents/Code/pbrt-v2/src/README_BUILDING.txt",
+		"/Users/lawsos2/Documents/Code/pbrt-v2/scenes/bunny.pbrt",
+		"/Users/lawsos2/Documents/Code/pbrt-v2/src/core/pbrtparse.yy",
+		"/Users/lawsos2/Downloads/hw3-linuxosx/Ray.h",
+		"/Users/lawsos2/Downloads/hw3-linuxosx/.variables.h.swp",
+		"/Users/lawsos2/Downloads/hw3-linuxosx/display.cpp",
+		"/Users/lawsos2/Downloads/hw3-linuxosx/Transform.h",
+		"/Users/lawsos2/Downloads/hw3-linuxosx/Camera.h",
+		"/Users/lawsos2/Downloads/hw3-linuxosx/shaders.h",
+		"/Users/lawsos2/Downloads/hw3-linuxosx/variables.h",
+		"/Users/lawsos2/Downloads/hw3-linuxosx/Camera.cpp",
+		"/Users/lawsos2/Documents/Code/pbrt-v2/src/core/pbrt.h",
+		"/Users/lawsos2/Desktop/glfw/CMakeLists.txt",
+		"/Users/lawsos2/Documents/Code/pbrt-v2/src/main/pbrt.cpp",
+		"/Users/lawsos2/Documents/Code/pbrt-v2/README.txt",
+		"/Users/lawsos2/Downloads/hw3-linuxosx/readfile.cpp",
+		"/Users/lawsos2/Documents/Code/edX/hw2-linuxosx/readfile.cpp",
+		"/Users/lawsos2/Downloads/hw3-submissionscenes/scene4-ambient.test",
+		"/Users/lawsos2/Downloads/hw2-linuxosx/scene.txt",
+		"/Users/lawsos2/Downloads/hw2-linuxosx/test.txt",
+		"/Users/lawsos2/Downloads/hw2-linuxosx/variables.h",
+		"/Users/lawsos2/Downloads/hw2-linuxosx/main.cpp",
+		"/Users/lawsos2/Downloads/hw2-linuxosx/shaders/light.frag.glsl",
+		"/Users/lawsos2/Downloads/hw2-linuxosx/glm-0.9.2.7/glm/gtc/matrix_transform.inl",
+		"/Users/lawsos2/Downloads/hw2-linuxosx/glm-0.9.2.7/glm/gtc/matrix_transform.hpp",
+		"/Users/lawsos2/Downloads/hw2-linuxosx/hw1.txt",
+		"/Users/lawsos2/Downloads/hw1-linuxosx/glm-0.9.2.7/glm/core/func_trigonometric.hpp",
+		"/Users/lawsos2/Downloads/hw1-linuxosx/Transform.cpp",
+		"/Users/lawsos2/Downloads/hw0-linuxosx/shaders.cpp",
+		"/Users/lawsos2/Downloads/hw0-linuxosx/mytest3.cpp",
+		"/Users/lawsos2/Desktop/php/uploader2.php",
+		"/Users/lawsos2/Desktop/auth.php",
+		"/Users/lawsos2/Desktop/php/server.php",
+		"/Users/lawsos2/Desktop/php/update.php",
+		"/Users/lawsos2/Documents/andWorkspace/android_SDK/extras/google/google_play_services/samples/auth/src/com/google/android/gms/auth/sample/helloauth/GetNameInBackground.java",
+		"/Users/lawsos2/Documents/andWorkspace/android_SDK/extras/google/google_play_services/samples/auth/src/com/google/android/gms/auth/sample/helloauth/HelloActivity.java",
+		"/Users/lawsos2/Documents/andWorkspace/android_SDK/extras/google/google_play_services/samples/auth/src/com/google/android/gms/auth/sample/helloauth/AbstractGetNameTask.java",
+		"/Users/lawsos2/Downloads/gplus-verifytoken-php-master/README.md",
+		"/Users/lawsos2/Documents/andWorkspace/android_SDK/extras/google/google_play_services/samples/auth/src/com/google/android/gms/auth/sample/helloauth/GetNameInBackgroundWithSync.java",
+		"/Users/lawsos2/Documents/andWorkspace/android_SDK/extras/google/google_play_services/samples/auth/src/com/google/android/gms/auth/sample/helloauth/GetNameInForeground.java",
+		"/Users/lawsos2/Desktop/php/uploader.php",
+		"/Users/lawsos2/Desktop/google-api-php-client/examples/templates/base.php",
+		"/Users/lawsos2/Desktop/google-api-php-client/src/Google/Client.php",
+		"/Users/lawsos2/Desktop/google-api-php-client/examples/idtoken.php",
+		"/Users/lawsos2/Documents/Code/EclipseWorkspace/MyI/src/com/shawnlawson/MyI/FlickrClient.java",
+		"/Users/lawsos2/Documents/andWorkspace/Sphoto/src/com/sphoto/SPhoto.java",
+		"/Users/lawsos2/Desktop/php/uploader3.php",
+		"/Users/lawsos2/Desktop/update.php",
+		"/Users/lawsos2/Documents/Code/EclipseWorkspace/MyI/res/layout/main.xml",
+		"/Users/lawsos2/Documents/Code/EclipseWorkspace/MyI/res/values/strings.xml",
+		"/Users/lawsos2/Documents/Code/EclipseWorkspace/MyI/AndroidManifest.xml",
+		"/Users/lawsos2/Documents/Code/EclipseWorkspace/MyI/src/com/shawnlawson/MyI/MyI.java",
+		"/Library/WebServer/Documents/google-api-php-client/examples/idtoken.php",
+		"/Library/WebServer/Documents/google-api-php-client/examples/user-example.php",
+		"/Library/WebServer/Documents/google-api-php-client/examples/simplefileupload.php",
+		"/Library/WebServer/Documents/google-api-php-client/examples/fileupload.php",
+		"/Library/WebServer/Documents/google-api-php-client/README.md",
+		"/Library/WebServer/Documents/google-api-php-client/examples/multi-api.php",
+		"/Library/WebServer/Documents/google-api-php-client/examples/batch.php",
+		"/Library/WebServer/Documents/google-api-php-client/examples/key.p12",
+		"/Library/WebServer/Documents/google-api-php-client/examples/simple-query.php",
+		"/Library/WebServer/Documents/google-api-php-client/examples/index.php",
+		"/Users/lawsos2/Downloads/gplus-quickstart-android-master/app/src/main/java/com/google/android/gms/plus/sample/quickstart/MainActivity.java",
+		"/Users/lawsos2/Downloads/gplus-quickstart-android-master/app/src/main/res/layout/main_activity.xml",
+		"/Library/WebServer/Documents/google-api-php-client/tests/README",
+		"/Users/lawsos2/Downloads/gplus-quickstart-android-master/app/src/main/res/values/strings.xml",
+		"/Users/lawsos2/Downloads/gplus-quickstart-android-master/app/src/main/AndroidManifest.xml",
+		"/Users/lawsos2/Downloads/gplus-photohunt-server-python-master/client_secrets.json",
+		"/Users/lawsos2/Downloads/gplus-photohunt-server-python-master/static/js/services.js",
+		"/Users/lawsos2/Downloads/gplus-photohunt-server-python-master/app.yaml",
+		"/Users/lawsos2/Desktop/twentyfourteen-child/style.css",
+		"/Users/lawsos2/Desktop/twentyfourteen-child/page.php",
+		"/Users/lawsos2/Desktop/twentyfourteen-child/content.php",
+		"/Users/lawsos2/Desktop/twentyfourteen-child/content-page.php",
+		"/Users/lawsos2/Desktop/twentyfourteen-child/comments.php",
+		"/Users/lawsos2/Desktop/twentyfourteen-child/footer.php",
+		"/Users/lawsos2/Downloads/water/data/test.vs",
+		"/Users/lawsos2/Downloads/water/data/test.fs",
+		"/Users/lawsos2/Downloads/water/data/box.vs",
+		"/Users/lawsos2/Downloads/water/data/box.fs",
+		"/Users/lawsos2/Desktop/getForCurtis",
+		"/Users/lawsos2/Desktop/test.py",
+		"/Users/lawsos2/Downloads/P5_CanTut_GeometryTexturesShaders2B8-master/GLSL_TextureMix/data/textureMixVert.glsl",
+		"/Users/lawsos2/algs4/Algs2Assign5/dictionary-yawl.txt",
+		"/Users/lawsos2/Downloads/LIVE/shaders/soundShaders.frag",
+		"/Users/lawsos2/Downloads/test01.fs",
+		"/Library/WebServer/Documents/_Obi-Wan_Codenobi_/index.html",
+		"/Users/lawsos2/Library/Preferences/com.reftechnology.gentry.plist",
+		"/Users/lawsos2/Library/Preferences/com.thioco.adenoid.plist",
+		"/Users/lawsos2/Library/Preferences/com.lansenthil.tupelo.plist",
+		"/Users/lawsos2/Desktop/test01.fs",
+		"/Users/lawsos2/Alpha2/Assets/NewShader.shader",
+		"/Users/lawsos2/Desktop/LIVE/shaders/blending.fs",
+		"/Users/lawsos2/Desktop/LIVE/shaders/clockCircle.fs",
+		"/Users/lawsos2/Desktop/LIVE/shaders/stripes.frag",
+		"/Users/lawsos2/Desktop/LIVE/shaders/fallingCircles.frag",
+		"/Users/lawsos2/Documents/maya/projects/default/particles/testingPerm_startup/particleShape1.250.pdc",
+		"/Users/lawsos2/Documents/maya/projects/default/particles/bouncingBall_startup/particleShape1.250.pdc",
+		"/Users/lawsos2/Desktop/LIVE/shaders/moreBox.fs",
+		"/Library/WebServer/Documents/live/css/codemirror.css",
+		"/Library/WebServer/Documents/live/index.html",
+		"/Users/lawsos2/Desktop/moreBox.fs",
+		"/Users/lawsos2/Desktop/LIVE/shaders/GreenCircles"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"getuser",
+			"read",
+			"light",
+			"ray",
+			"glm",
+			"atten",
+			"obj",
+			";\n",
+			"attenuation",
+			"camera",
+			"transform",
+			"obj",
+			"left",
+			"stack",
+			"]);\n",
+			"perspective",
+			"matrix",
+			"F",
+			"upini",
+			"color",
+			"enableLight",
+			"init",
+			"main",
+			"validinput",
+			"lightcoln",
+			"validinput",
+			"center",
+			"display",
+			"displayfun",
+			"main",
+			"emi",
+			"specular",
+			"dif",
+			"amb",
+			"am",
+			"lightcol",
+			"enable",
+			"color",
+			"n\",",
+			"f",
+			"F",
+			"rotate",
+			"up",
+			"disp",
+			"echo",
+			"06-16 21:58:09.713: D/sent data(29089): ",
+			"uploaded",
+			"array",
+			"Scop",
+			"exec",
+			"gettask",
+			"backg",
+			"mEmail",
+			"accountname",
+			"show",
+			"upload_dir",
+			"<b",
+			"exe",
+			"imageUp",
+			"rec",
+			"connect",
+			"connection",
+			"asy",
+			"upload",
+			"md5",
+			"getauthor",
+			"progressLi",
+			"asy",
+			"progressDia",
+			"asyn",
+			"context",
+			"multipart",
+			"outState",
+			"footer",
+			"foot",
+			"art",
+			"style",
+			"box",
+			"1 2",
+			"zan",
+			"coord",
+			"bands",
+			"qui",
+			"audioContext",
+			"blend",
+			"Blend",
+			"blend",
+			"Blend",
+			"blend",
+			"Blend",
+			"blend",
+			"Blend",
+			"blend",
+			"Blend",
+			"blend",
+			" \n",
+			"blend",
+			"Blend",
+			"blend",
+			"Blend",
+			"blend",
+			"Blend",
+			"blend",
+			"base",
+			"smoothstep",
+			"header",
+			"javascript",
+			"header",
+			"mErrors",
+			"tickTime",
+			"background",
+			"error",
+			"exp",
+			"key",
+			"box",
+			"tron",
+			"colorset",
+			"glow",
+			"stand",
+			"frequency",
+			"err",
+			"mprecis",
+			"determine",
+			"this.mHeader",
+			"chars",
+			"header",
+			"precis",
+			"determin"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			" ",
+			"presets",
+			"resolution",
+			"channel",
+			"channelResolution",
+			"img",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "readme.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2270,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								167,
+								167
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": true,
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 200.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "aci_fall14.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 214.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
