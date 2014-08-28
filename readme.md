@@ -26,6 +26,7 @@ Also check RPI Library's Safari On-line collection for these.
 - [GIT Reference](http://gitref.org/)
 - [GIT Tutorial](http://try.github.com/levels/1/challenges/1)
 - [GIT Visual CheatSheet](http://ndpsoftware.com/git-cheatsheet.html)
+- [GitHub GIT CheatSheet](https://education.github.com/git-cheat-sheet-education.pdf)
 - [Git Simple](http://rogerdudler.github.io/git-guide/)
 - [Another Reference](http://marklodato.github.io/visual-git-guide/index-en.html)
 - [git video](http://www.codeschool.com/courses/try-git)
