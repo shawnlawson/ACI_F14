@@ -65,6 +65,10 @@ Some additional help on the [openFrameworks](http://www.openframeworks.cc/downlo
 
 >> or C++ version of [eclipse](http://www.eclipse.org)
 
+> __OSX & Linux__
+
+>> [Sublime Text - OF Forum] (http://forum.openframeworks.cc/t/openframeworks-and-sublime-2/11118/15) 
+
 #### 6. openFrameworks (OF)
 Download and install [OF](http://www.openframeworks.cc/download/) for your platform and environment; or, if you know what you're doing [OF git](https://github.com/openframeworks/openFrameworks).
 
