@@ -12,5 +12,9 @@ Clement Perkins:https://vimeo.com/104982653
 
 Will Pheloung:https://vimeo.com/104730130
 
+Rebecca Nordhauser - https://vimeo.com/104987711
+
 Zach Temkin: https://vimeo.com/104979798
+
+Jacqueline Torrisi: https://vimeo.com/user31838372
 
