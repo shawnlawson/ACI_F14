@@ -1,5 +1,7 @@
 ## Vimeo Links
 
+Dom Cristaldi:https://vimeo.com/user31837501
+
 Michelle Lehner:https://vimeo.com/104727185
 
 Jesse Levine:https://vimeo.com/104983034
