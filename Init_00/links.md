@@ -1,6 +1,6 @@
 ## Vimeo Links
 
-Dom Cristaldi:https://vimeo.com/user31837501
+Dom Cristaldi:https://vimeo.com/105319282
 
 Michelle Lehner:https://vimeo.com/104727185
 
