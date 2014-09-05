@@ -6,6 +6,8 @@ Dillon Burns - https://vimeo.com/105025690
 
 Craig Carlson:https://vimeo.com/105025640
 
+Dom Cristaldi:https://vimeo.com/105319282
+
 Stephan Jiang: https://vimeo.com/105077211
 
 Michelle Lehner:https://vimeo.com/104727185
@@ -22,4 +24,4 @@ Parshva Shah https://vimeo.com/105024332
 
 Zach Temkin: https://vimeo.com/104979798
 
-Jacqueline Torrisi: https://vimeo.com/user31838372
+Jacqueline Torrisi: https://vimeo.com/105358611
