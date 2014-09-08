@@ -1,49 +1,26 @@
 #include "ofApp.h"
 
-
-//class to draw square
-
 //--------------------------------------------------------------
 void ofApp::setup(){
-    ofNoFill();
-    ofSetRectMode(OF_RECTMODE_CENTER);
+    mPoint.setPosition(ofPoint(0, 0));
+    mPoint.setRepeatType(LOOP_BACK_AND_FORTH);
+    mPoint.setCurve(EASE_IN_EASE_OUT);
+    mPoint.animateTo(ofPoint(ofGetWidth(),
+                             ofGetHeight()));
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-
+    float dt = ofGetLastFrameTime();
+    mPoint.update(dt);
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    ofBackground(ofColor::white);
+    ofBackground(ofColor::blueSteel);
+    ofSetColor(ofColor::chartreuse);
     
-    ofSetColor(ofColor::black);
-    
-    int size = 20;
-    
-    ofTranslate(100, 100);
-    ofPushMatrix();
-        for (int i = 0; i < 12; i++)
-        {
-            for (int j = 0; j < 20; j++)
-            {
-                float scaler = j/20.0;
-                float newX = ofRandom(-6, 6);
-                float newY = ofRandom(-10, 10);
-                
-                ofPushMatrix();
-                    ofTranslate(i*size + newX*scaler, j*size + newY*scaler);
-                    ofPushMatrix();
-                        ofRotateZ(ofRandom(-scaler*10, scaler*10));
-                        ofRect(0,0, size, size);
-                    ofPopMatrix();
-                ofPopMatrix();
-            }
-        }
-    ofPopMatrix();
-    
-
+    mPoint.draw();
     
 }
 
@@ -79,7 +56,9 @@ void ofApp::mouseReleased(int x, int y, int button){
 
 //--------------------------------------------------------------
 void ofApp::windowResized(int w, int h){
-
+    mPoint.setPosition(ofPoint(0,0));
+    mPoint.animateTo(ofPoint(ofGetWidth(),
+                             ofGetHeight()));
 }
 
 //--------------------------------------------------------------
