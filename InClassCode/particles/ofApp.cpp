@@ -12,7 +12,11 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-
+    ofBackground(ofColor::sandyBrown);
+    
+    for (int i = 0; i < emitter.size(); i++) {
+        emitter[i].draw();
+    }
 }
 
 //--------------------------------------------------------------
@@ -36,8 +40,15 @@ void ofApp::mouseDragged(int x, int y, int button){
 }
 
 //--------------------------------------------------------------
-void ofApp::mousePressed(int x, int y, int button){
-
+void ofApp::mousePressed(int x, int y, int button)
+{
+    int max = ofRandom(10, 20);
+    
+    for (int i = 0; i < max; i++) {
+        emitter.push_back( Particle(ofVec2f(x, y),
+                                    ofVec2f(ofRandom(-10, 10), ofRandom(-10, 10)),
+                                    ofColor::salmon));
+    }
 }
 
 //--------------------------------------------------------------
