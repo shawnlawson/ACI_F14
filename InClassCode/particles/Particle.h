@@ -13,17 +13,17 @@
 
 class Particle {
 
-    ofVec2f position, velocity;
-    ofColor color;  
-    
-
 public:
     Particle();
     Particle(ofVec2f pos, ofVec2f vel, ofColor col);
     void draw();
+    void drawR(float r);
     void update();
+    void applyForces();
     
-    
+    ofVec2f position, velocity;
+    ofColor color;
+    bool    destroy;
     
 };
 

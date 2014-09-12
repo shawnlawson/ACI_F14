@@ -2,21 +2,45 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-
+    ofSetFrameRate(3);
+    
+    boombox.loadSound("beat.wav");
+    boombox.setMultiPlay(true);
+   // boombox.setLoop(true);
 }
 
 //--------------------------------------------------------------
-void ofApp::update(){
-
+void ofApp::update()
+{
+    vector<Particle> hold;
+    
+    for (int i = 0; i < emitter.size(); i++)
+    {
+        emitter[i].applyForces();
+        emitter[i].update();
+    
+        if (!emitter[i].destroy)
+            hold.push_back(emitter[i]);
+    }
+    
+    emitter.clear();
+    emitter = hold;
+    hold.clear();
+    
+//    cerr << emitter.size() << endl;
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
     ofBackground(ofColor::sandyBrown);
+//    ofBackground(ofRandom(255), ofRandom(255), ofRandom(255));
     
     for (int i = 0; i < emitter.size(); i++) {
         emitter[i].draw();
     }
+    
+    ofSetColor(ofColor::seaGreen);
+    ofRect(0, ofGetHeight()-100, ofGetWidth(), ofGetHeight()-100);
 }
 
 //--------------------------------------------------------------
@@ -46,9 +70,10 @@ void ofApp::mousePressed(int x, int y, int button)
     
     for (int i = 0; i < max; i++) {
         emitter.push_back( Particle(ofVec2f(x, y),
-                                    ofVec2f(ofRandom(-10, 10), ofRandom(-10, 10)),
+                                    ofVec2f(ofRandom(-20, 20), ofRandom(-20, 20)),
                                     ofColor::salmon));
     }
+    boombox.play();
 }
 
 //--------------------------------------------------------------

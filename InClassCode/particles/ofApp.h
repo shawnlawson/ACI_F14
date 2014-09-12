@@ -21,5 +21,7 @@ class ofApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
     
     vector <Particle> emitter;
+    
+    ofSoundPlayer boombox;
 		
 };
