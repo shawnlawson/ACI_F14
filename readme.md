@@ -45,3 +45,6 @@ Also check RPI Library's Safari On-line collection for these.
  - I use [Sublime Text](http://www.sublimetext.com) to edit outside of Github with [LiveReload](https://github.com/dz0ny/LiveReload-sublimetext2) and [Markdown Preview](https://github.com/revolunet/sublimetext-markdown-preview).
  - [Syntax/Cheatsheet](http://daringfireball.net/projects/markdown/syntax)
  - Github [specific](https://help.github.com/articles/github-flavored-markdown)
+
+#### XCode 6 
+- [XCode 6 link error with OF](http://forum.openframeworks.cc/t/xcode6-compile-issue/16507)
