@@ -10,6 +10,12 @@ void ofApp::setup(){
     grab.setDeviceID(0);
     grab.initGrabber(320, 240);
     
+    image.allocate(320, 240, GL_RGB);
+    image2.allocate(320, 240, GL_RGB);
+    
+    numFrames = 200;
+    numSlice = 0;
+    
 }
 
 //--------------------------------------------------------------
@@ -17,6 +23,40 @@ void ofApp::update(){
     video.update();
     
     grab.update();
+    
+    if (grab.isFrameNew())
+    {
+        frames.push_front(grab.getPixelsRef());
+    }
+    
+    if (frames.size() > numFrames)
+    {
+        frames.pop_back();
+    }
+    
+    if (!frames.empty())
+    {
+        if (!imagePixels.isAllocated()) {
+            imagePixels = frames[0];
+        }
+        
+        if (!imagePixels2.isAllocated()) {
+            imagePixels2 = frames[0];
+        }
+        
+        int w = frames[0].getWidth();
+        int h = frames[0].getHeight();
+        
+        //write amazing code
+        
+        
+        image.loadData(imagePixels);
+        
+        //write circular code
+        
+        image2.loadData(imagePixels2);
+        
+    }
     
 }
 
@@ -42,6 +82,10 @@ void ofApp::draw(){
     ofPushMatrix();
     ofTranslate(0, video.getHeight() + 10);
     grab.draw(0, 0, grab.getWidth(), grab.getHeight());
+    ofTranslate(grab.getWidth()+10, 0);
+    image.draw(0, 0);
+    ofTranslate(image.getWidth()+10, 0);
+    image2.draw(0,0);
     ofPopMatrix();
 }
 
