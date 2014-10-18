@@ -48,11 +48,23 @@ void ofApp::update(){
         int h = frames[0].getHeight();
         
         //write amazing code
-        
-        
+        for (int y =0; y<h; y++)
+        {
+            ofColor c = frames[0].getColor(numSlice, y);
+            imagePixels.setColor(numSlice, y, c);
+        }
+        numSlice = (numSlice + 1) % imagePixels.getWidth();
         image.loadData(imagePixels);
         
         //write circular code
+        for (int y = 0; y<h; y++)
+        {
+            for (int x = 0; x<w; x++)
+            {
+                ofColor c = getPixelColor(x, y);
+                imagePixels2.setColor(x, y, c);
+            }
+        }
         
         image2.loadData(imagePixels2);
         
@@ -87,6 +99,32 @@ void ofApp::draw(){
     ofTranslate(image.getWidth()+10, 0);
     image2.draw(0,0);
     ofPopMatrix();
+}
+
+//--------------------------------------------------------------
+ofColor ofApp::getPixelColor( int x, int y)
+{
+    int pixX = ofMap(mouseX, 0, ofGetWidth(), 0, grab.getWidth());
+    int pixY = ofMap(mouseY, 0, ofGetHeight(), 0, grab.getHeight());
+    
+    float dist = ofDist(x, y, pixX, pixY);
+    
+    float f = dist/2.0;
+    
+    int i0 = int(f);
+    int i1 = i0 + 1;
+    
+    float weight0 = i1 - f;
+    float weight1 = 1 - weight0;
+    
+    int n = frames.size() - 1;
+    i0 = ofClamp(i0, 0, n);
+    i1 = ofClamp(i1, 0, n);
+    
+    ofColor color0 = frames[i0].getColor(x, y);
+    ofColor color1 = frames[i1].getColor(x, y);
+    
+    return color0 * weight0 + color1 * weight1;
 }
 
 //--------------------------------------------------------------
