@@ -1,7 +1,8 @@
 #pragma once
 
 #include "ofMain.h"
-
+#include "ofxOpenCv.h"
+#include "ofxCvHaarFinder.h"
 
 class ofApp : public ofBaseApp{
 
@@ -22,11 +23,9 @@ class ofApp : public ofBaseApp{
 		
     
     ofVideoPlayer video;
-    
-    ofVideoGrabber grab;
-    
+
+    ofVideoGrabber  grab;
     deque<ofPixels>frames;
-    
     int numFrames;
     int numSlice;
     
@@ -35,26 +34,12 @@ class ofApp : public ofBaseApp{
     
     int mouseX, mouseY;
     
-    ofColor getPixelColor( int x, int y);
+    ofxCvColorImage     colorImage;
+    ofxCvGrayscaleImage grayImage;
+    ofxCvContourFinder  contourFinder;
+    float   thresh;
     
+    ofxCvHaarFinder haarFinder;
+    
+    ofColor getPixelColor( int x, int y);
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

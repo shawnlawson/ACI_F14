@@ -16,21 +16,25 @@ void ofApp::setup(){
     numFrames = 200;
     numSlice = 0;
     
+    colorImage.allocate(320, 240);
+    grayImage.allocate(320, 240);
+    thresh = 80.0;
+    
+    haarFinder.setup("haarcascade_frontalface_default.xml");
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
+
     video.update();
     
     grab.update();
     
-    if (grab.isFrameNew())
-    {
+    if (grab.isFrameNew()) {
         frames.push_front(grab.getPixelsRef());
     }
     
-    if (frames.size() > numFrames)
-    {
+    if (frames.size() > numFrames) {
         frames.pop_back();
     }
     
@@ -47,69 +51,90 @@ void ofApp::update(){
         int w = frames[0].getWidth();
         int h = frames[0].getHeight();
         
-        //write amazing code
-        for (int y =0; y<h; y++)
-        {
+        
+        for (int y = 0; y<h; y++) {
             ofColor c = frames[0].getColor(numSlice, y);
             imagePixels.setColor(numSlice, y, c);
         }
-        numSlice = (numSlice + 1) % imagePixels.getWidth();
         image.loadData(imagePixels);
         
-        //write circular code
-        for (int y = 0; y<h; y++)
-        {
-            for (int x = 0; x<w; x++)
-            {
+        numSlice = (numSlice + 1) % 320;
+        
+        for (int y = 0; y<h; y++) {
+            for (int x = 0; x<w; x++) {
                 ofColor c = getPixelColor(x, y);
                 imagePixels2.setColor(x, y, c);
             }
         }
-        
         image2.loadData(imagePixels2);
         
+       // colorImage.setFromPixels(imagePixels2.getPixels(), 320, 240);
+        haarFinder.findHaarObjects(imagePixels2.get);
     }
-    
+
+    colorImage.setFromPixels(video.getPixels(), 320, 240);
+    grayImage = colorImage;
+    grayImage.threshold(thresh);
+    grayImage.flagImageChanged();
+    //image to search, min area, max area, num blobs, blobs with holes?
+    contourFinder.findContours(grayImage, 300, 38400, 10, true);
+  
+//    haarFinder.findHaarObjects(grab.getPixelsRef());
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    video.draw(0, 0, video.getWidth(), video.getHeight());
-    
+    ofSetColor(255);
+    video.draw(0, 0, video.width, video.height);
     
     ofPixels &pixels = video.getPixelsRef();
     
+    int w = pixels.getWidth();
+    int h = pixels.getHeight();
+    
     ofPushMatrix();
-    ofTranslate(video.getWidth()+10, 0);
-    for (int x = 0; x<video.getWidth(); x++)
-    {
-        int pixY = ofMap(mouseY, 0, ofGetHeight(), 0, video.getHeight());
+    ofTranslate(video.width + 10, 0);
+    for (int x=0; x<w ; x++) {
+        int pixY = ofMap(mouseY, 0, ofGetHeight(), 0, 240);
+        cout << pixY << endl;
         ofColor c = pixels.getColor(x, pixY);
         ofSetColor(c);
-        ofLine(x, 0, x, video.getHeight());
+        ofLine(x, 0, x, h);
     }
+    
+    ofTranslate(video.width + 10, 0);
+    grayImage.draw(0, 0);
+    for (int i = 0; i<contourFinder.blobs.size(); i++) {
+        contourFinder.blobs[i].draw(0,0);
+    }
+    
     ofPopMatrix();
     
     ofSetColor(255);
     ofPushMatrix();
-    ofTranslate(0, video.getHeight() + 10);
-    grab.draw(0, 0, grab.getWidth(), grab.getHeight());
-    ofTranslate(grab.getWidth()+10, 0);
-    image.draw(0, 0);
-    ofTranslate(image.getWidth()+10, 0);
-    image2.draw(0,0);
+    ofTranslate(0, video.height+10);
+    grab.draw(0, 0, grab.width, grab.height);
+    
+    for (int i = 0; i < haarFinder.blobs.size(); i++) {
+        haarFinder.blobs[i].draw(0,0);
+    }
+    
+    ofSetColor(255);
+    
+    ofTranslate(grab.width+10, 0);
+    image.draw(0,0);
+    ofTranslate(grab.width+10, 0);
+    image2.draw(0, 0);
     ofPopMatrix();
 }
 
-//--------------------------------------------------------------
-ofColor ofApp::getPixelColor( int x, int y)
-{
-    int pixX = ofMap(mouseX, 0, ofGetWidth(), 0, grab.getWidth());
-    int pixY = ofMap(mouseY, 0, ofGetHeight(), 0, grab.getHeight());
+ofColor ofApp::getPixelColor( int x, int y) {
+    int pixY = ofMap(mouseY, 0, ofGetHeight(), 0, 240);
+    int pixX = ofMap(mouseX, 0, ofGetWidth(), 0, 320);
     
     float dist = ofDist(x, y, pixX, pixY);
     
-    float f = dist/2.0;
+    float f = dist / 8.0;
     
     int i0 = int(f);
     int i1 = i0 + 1;
@@ -121,10 +146,12 @@ ofColor ofApp::getPixelColor( int x, int y)
     i0 = ofClamp(i0, 0, n);
     i1 = ofClamp(i1, 0, n);
     
-    ofColor color0 = frames[i0].getColor(x, y);
-    ofColor color1 = frames[i1].getColor(x, y);
+    ofColor color0 = frames[ i0 ].getColor( x, y );
+    ofColor color1 = frames[ i1 ].getColor( x, y );
     
-    return color0 * weight0 + color1 * weight1;
+    ofColor color = color0 * weight0 + color1 * weight1;
+    
+    return color;
 }
 
 //--------------------------------------------------------------
@@ -141,6 +168,7 @@ void ofApp::keyReleased(int key){
 void ofApp::mouseMoved(int x, int y ){
     mouseX = x;
     mouseY = y;
+    thresh = ofMap(x, 0.0, ofGetWidth(), 0.0, 255.0);
 }
 
 //--------------------------------------------------------------
